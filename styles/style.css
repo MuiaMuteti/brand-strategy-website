@@ -10,3 +10,37 @@
     --font-nunito-sans: 'Nunito Sans', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
 }
+
+/* resets */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* global css */
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0 4rem;
+    font-family: var(--font-roboto);
+}
+
+h1,
+h2 {
+    font-family: var(--font-nunito-sans);
+}
+
+p,
+a {
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
