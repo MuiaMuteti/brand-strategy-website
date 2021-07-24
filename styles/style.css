@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #007FFC;
+    --secondary-color: #16133E;
+    --main-text-color: #16133E;
+    --secondary-text-color: #5A7184;
+    --subtitle-text-color: #87A1B6;
+    --price-card1-color: #0593FA;
+    --price-card2-color: #56CBAE;
+    --price-card3-color: #FA6770;
+    --font-nunito-sans: 'Nunito Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
