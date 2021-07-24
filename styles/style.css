@@ -44,3 +44,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* acknowledgement section */
+.acknowledgement {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.acknowledgement a {
+    color: white;
+}
