@@ -8,6 +8,9 @@ View this impressive design at [sketch resources](https://www.sketchappsources.c
 
 Simple Landing Page – get this awesome Sketch resource by figmango via @sketchsources http://www.sketchappsources.com/free-source/4504-freehand-landing-page-sketch-freebie-resource.html
 
+## Project status
+The project is still in development
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit)
