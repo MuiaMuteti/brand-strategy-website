@@ -28,3 +28,40 @@ function handleMenuClick() {
         signButtons.classList.remove('menu-open');
     }
 }
+
+// slide show functionality
+
+// reference elements
+let prevBtn = document.querySelector('.prev');
+let nxtBtn = document.querySelector('.next');
+let slideImg = document.querySelector('.slide-img');
+
+let slideIndex = 0;
+
+selectSlide(slideIndex);
+
+prevBtn.addEventListener('click', () => iterateSlideIndex(-1));
+nxtBtn.addEventListener('click', () => iterateSlideIndex(1));
+
+function iterateSlideIndex(n) {
+    slideIndex += n;
+    
+    selectSlide(slideIndex);
+}
+
+function selectSlide(index) {
+    let slides = document.getElementsByClassName("slide");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+    if (index >= slides.length) {
+        slideIndex = 0;
+    }
+
+    slides[slideIndex].style.display = "block";
+}
