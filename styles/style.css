@@ -65,6 +65,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .icons {
@@ -100,7 +101,8 @@ img {
 }
 
 .nav a,
-.sign-buttons a {
+.sign-buttons a,
+.cta-buttons a {
     text-decoration: none;
     font-weight: 500;
 }
@@ -125,10 +127,14 @@ img {
     gap: 2rem;
 }
 
+.cta-buttons a,
 .sign-buttons a {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
     border-radius: 0.8rem;
+}
+
+.sign-buttons a {
+    padding: 0.5rem 1.5rem;
     border: 2px solid var(--secondary-color);
 }
 
@@ -137,15 +143,96 @@ img {
     background-color: var(--secondary-color);
 }
 
+
+/* main section */
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 2rem 0 10rem 0;
+}
+
+.banner-text h1 {
+    font-size: 5.6rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.banner-text p {
+    font-size: 1.9rem;
+    color: #183B56;
+    margin: 2rem 0 3rem 0;
+}
+
+.cta-buttons a {
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-color);
+}
+
+.cta-buttons .main {
+    color: white;
+    background-color: var(--primary-color);
+    margin-right: 2rem;
+}
+
+.cta-buttons .secondary {
+    color: var(--primary-color);
+}
+
+/* slide show */
+.slideshow {
+    padding: 2rem 0;
+    position: relative;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.prev {
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    right: 0;
+    transform: translate(50%, -50%) rotate(180deg);
+}
+
 @media screen and (max-width: 1250px) {
     .nav {
         gap: 5rem;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .nav {
         gap: 2rem;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .slideshow {
+        max-width: 65rem;
     }
 }
 
@@ -178,6 +265,34 @@ img {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .banner-text h1 {
+        font-size: 4.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner-text h1 {
+        font-size: 3.6rem;
+    }
+
+    .slideshow {
+        padding: 0;
+    }
+
+    .prev,
+    .next {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cta-buttons a:last-child {
+        margin-top: 2rem;
     }
 }
 
