@@ -216,6 +216,69 @@ img {
     transform: translate(50%, -50%) rotate(180deg);
 }
 
+/* services section */
+
+.services-container {
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.services h2 {
+    margin: 2rem 0 1rem 0;
+}
+
+.service-card {
+    border: 1px solid #E5EAF4;
+    padding: 2rem;
+    color: var(--main-text-color);
+    border-radius: 0.8rem;
+}
+
+.service-card a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.service-title {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+}
+
+.service-desc {
+    margin: 1rem 0 2rem 0;
+}
+
+.service-icon {
+    width: 6.2rem;
+    height: 6.6rem;
+    border: 1px solid #E8F0FB;
+    border-radius: 1.6rem;
+    display: flex;
+}
+
+.service-icon img {
+    margin: auto;
+}
+
+.section-title {
+    color: var(--subtitle-text-color);
+    text-transform: uppercase;
+}
+
+.section-headline {
+    font-size: 4rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.section-desc {
+    color: var(--secondary-text-color);
+    font-size: 1.8rem;
+}
+
+/* media queries */
 @media screen and (max-width: 1250px) {
     .nav {
         gap: 5rem;
@@ -273,11 +336,20 @@ img {
     .banner-text h1 {
         font-size: 4.6rem;
     }
+
+    .section-headline {
+        font-size: 3.5rem;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
     .banner-text h1 {
         font-size: 3.6rem;
+    }
+
+    .section-headline {
+        font-size: 3rem;
     }
 
     .slideshow {
