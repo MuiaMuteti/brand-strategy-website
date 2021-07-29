@@ -181,7 +181,7 @@ img {
 
 /* slide show */
 .slideshow {
-    padding: 2rem;
+    padding: 2rem 0;
     position: relative;
     max-width: 50rem;
     margin: auto;
@@ -200,7 +200,6 @@ img {
 .next {
     position: absolute;
     top: 50%;
-    margin-top: -2.7rem;
     background-color: var(--secondary-color);
     border: none;
     padding: 1.5rem;
@@ -209,12 +208,12 @@ img {
 }
 
 .prev {
-    left: -0.6rem;
+    transform: translate(-50%, -50%);
 }
 
 .next {
-    right: -0.6rem;
-    transform: rotate(180deg);
+    right: 0;
+    transform: translate(50%, -50%) rotate(180deg);
 }
 
 @media screen and (max-width: 1250px) {
@@ -288,15 +287,6 @@ img {
     .prev,
     .next {
         padding: 1rem;
-        margin-top: -2.2rem;
-    }
-
-    .prev {
-        left: -2.1rem;
-    }
-
-    .next {
-        right: -2.1rem;
     }
 }
 
