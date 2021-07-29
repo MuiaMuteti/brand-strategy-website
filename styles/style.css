@@ -148,7 +148,7 @@ img {
 .banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 5rem;
     margin: 2rem 0 10rem 0;
 }
 
@@ -223,9 +223,17 @@ img {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .nav {
         gap: 2rem;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .slideshow {
+        max-width: 65rem;
     }
 }
 
@@ -258,6 +266,43 @@ img {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .banner-text h1 {
+        font-size: 4.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner-text h1 {
+        font-size: 3.6rem;
+    }
+
+    .slideshow {
+        padding: 0;
+    }
+
+    .prev,
+    .next {
+        padding: 1rem;
+        margin-top: -2.2rem;
+    }
+
+    .prev {
+        left: -2.1rem;
+    }
+
+    .next {
+        right: -2.1rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cta-buttons a:last-child {
+        margin-top: 2rem;
     }
 }
 
