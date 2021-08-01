@@ -225,7 +225,8 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
-.services h2 {
+.services h2,
+.features h2 {
     margin: 2rem 0 1rem 0;
 }
 
@@ -262,6 +263,60 @@ img {
     margin: auto;
 }
 
+/* features section */
+.features {
+    margin-top: 10rem;
+}
+
+.features-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.feature-card {
+    flex: 30rem;
+    position: relative;
+    background-color: var(--primary-color);
+    height: 30rem;
+    border-radius: 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-card:nth-child(odd) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/feature-bg1.png');
+}
+
+.feature-card:nth-child(even) {
+    background-position: center 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/feature-bg2.png');
+}
+
+.feature-card p {
+    color: white;
+    font-size: 3.6rem;
+    position: absolute;
+    left: 4rem;
+    bottom: 4rem;
+}
+
+@media screen and (max-width: 880px) {
+    .feature-card p {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .feature-card p {
+        font-size: 2rem;
+    }
+}
+
+/* classes used in and services features */
 .section-title {
     color: var(--subtitle-text-color);
     text-transform: uppercase;
