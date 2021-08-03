@@ -84,6 +84,10 @@ img {
     height: 2.7rem;
 }
 
+.logo img:first-child {
+    margin-right: 0.5rem;
+}
+
 .menu {
     border: none;
     background-color: white;
@@ -501,6 +505,82 @@ img {
     }
 }
 
+.footer {
+    margin: 10rem -4rem 0 -4rem;
+    padding: 4rem;
+    background-color: #16143D;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-wrapper {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.footer-brand .logo,
+.footer-title {
+    margin-bottom: 2rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-top: 6rem;
+}
+
+.footer-title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li a,
+.copyright,
+.footer-contact p:not(.footer-title) {
+    font-size: 1.5rem;
+}
+
+.footer li {
+    margin-bottom: 1rem;
+}
+
+.footer-contact a {
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.certifications img {
+    width: 100px;
+}
+
+.copyright {
+    text-align: center;
+
+    margin-top: 6rem;
+}
+
 /* utility classes */
 .secondary-cta-btn {
     display: inline-block;
@@ -605,7 +685,7 @@ img {
 }
 
 @media screen and (max-width: 320px) {
-    .logo img:first-child {
+    .icons .logo img:first-child {
         display: none;
     }
 
