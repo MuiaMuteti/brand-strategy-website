@@ -45,6 +45,37 @@ img {
     height: auto;
 }
 
+/* utility classes */
+
+.secondary-cta-btn {
+    display: inline-block;
+
+    padding: 1rem 4rem;
+
+    text-decoration: none;
+    color: var(--main-text-color);
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 2.3rem;
+}
+
+/* classes used in and services features */
+.section-title {
+    color: var(--subtitle-text-color);
+    text-transform: uppercase;
+}
+
+.section-headline {
+    font-size: 4rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+}
+
+.section-desc {
+    color: var(--secondary-text-color);
+    font-size: 1.8rem;
+}
+
 /* acknowledgement section */
 .acknowledgement {
     background-color: var(--primary-color);
@@ -308,35 +339,6 @@ img {
     bottom: 4rem;
 }
 
-@media screen and (max-width: 880px) {
-    .feature-card p {
-        font-size: 2.6rem;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .feature-card p {
-        font-size: 2rem;
-    }
-}
-
-/* classes used in and services features */
-.section-title {
-    color: var(--subtitle-text-color);
-    text-transform: uppercase;
-}
-
-.section-headline {
-    font-size: 4rem;
-    color: var(--main-text-color);
-    font-weight: 600;
-}
-
-.section-desc {
-    color: var(--secondary-text-color);
-    font-size: 1.8rem;
-}
-
 /* price plan section */
 .price-plan {
     margin-top: 10rem;
@@ -426,21 +428,6 @@ img {
     color: white;
 
     background-color: var(--secondary-color);
-}
-
-/* cards take available width */
-@media screen and (max-width: 340px) {
-    .price-plans-container {
-        grid-template-columns: 1fr;
-    }
-
-    .plan-card {
-        padding: 2rem;
-    }
-
-    .plan-card a {
-        padding: 0.5rem 1rem;
-    }
 }
 
 /* ada section */
@@ -581,19 +568,6 @@ img {
     margin-top: 6rem;
 }
 
-/* utility classes */
-.secondary-cta-btn {
-    display: inline-block;
-
-    padding: 1rem 4rem;
-
-    text-decoration: none;
-    color: var(--main-text-color);
-
-    border: 2px solid var(--secondary-color);
-    border-radius: 2.3rem;
-}
-
 /* media queries */
 @media screen and (max-width: 1250px) {
     .nav {
@@ -616,6 +590,11 @@ img {
 }
 
 
+@media screen and (max-width: 880px) {
+    .feature-card p {
+        font-size: 2.6rem;
+    }
+}
 
 @media screen and (max-width: 850px) {
     .nav-bar {
@@ -653,7 +632,8 @@ img {
         font-size: 4.6rem;
     }
 
-    .section-headline {
+    .section-headline,
+    .ada h2 {
         font-size: 3.5rem;
     }
 
@@ -664,8 +644,13 @@ img {
         font-size: 3.6rem;
     }
 
-    .section-headline {
+    .section-headline,
+    .ada h2 {
         font-size: 3rem;
+    }
+
+    .feature-card p {
+        font-size: 2rem;
     }
 
     .slideshow {
@@ -679,8 +664,23 @@ img {
 }
 
 @media screen and (max-width: 370px) {
-    .cta-buttons a:last-child {
+    .cta-buttons .secondary {
         margin-top: 2rem;
+    }
+}
+
+/* cards take available width */
+@media screen and (max-width: 340px) {
+    .price-plans-container {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card {
+        padding: 2rem;
+    }
+
+    .plan-card a {
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -696,5 +696,9 @@ img {
     .menu {
         width: 3rem;
         height: 3rem;
+    }
+
+    .cta-buttons .main {
+        margin-right: 0;
     }
 }
