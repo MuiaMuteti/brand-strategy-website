@@ -267,7 +267,7 @@ img {
 
 .service-card {
     border: 1px solid #E5EAF4;
-    padding: 2rem;
+    padding: 4rem;
     color: var(--main-text-color);
     border-radius: 0.8rem;
 }
@@ -283,7 +283,7 @@ img {
 }
 
 .service-desc {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 4rem 0;
 }
 
 .service-icon {
@@ -299,7 +299,9 @@ img {
 }
 
 /* features section */
-.features {
+.features,
+.price-plan,
+.ada {
     margin-top: 10rem;
 }
 
@@ -340,9 +342,6 @@ img {
 }
 
 /* price plan section */
-.price-plan {
-    margin-top: 10rem;
-}
 
 .price-plan h2 {
     margin-bottom: 1rem;
@@ -436,8 +435,6 @@ img {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 10rem;
-
     padding: 4rem;
 
     color: white;
@@ -470,26 +467,6 @@ img {
 
     background-color: white;
     color: var(--main-text-color);
-}
-
-@media screen and (max-width: 560px) {
-    .ada-links a {
-        display: block;
-    }
-
-    .ada-links a:first-child {
-        margin-right: 0;
-    }
-
-    .ada-links a:last-child {
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .ada {
-        padding: 2rem;
-    }
 }
 
 .footer {
@@ -639,6 +616,20 @@ img {
 
 }
 
+@media screen and (max-width: 560px) {
+    .ada-links a {
+        display: block;
+    }
+
+    .ada-links a:first-child {
+        margin-right: 0;
+    }
+
+    .ada-links a:last-child {
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .banner-text h1 {
         font-size: 3.6rem;
@@ -666,6 +657,10 @@ img {
 @media screen and (max-width: 370px) {
     .cta-buttons .secondary {
         margin-top: 2rem;
+    }
+
+    .ada {
+        padding: 2rem;
     }
 }
 
