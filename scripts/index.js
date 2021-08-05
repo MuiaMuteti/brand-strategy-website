@@ -29,6 +29,14 @@ function handleMenuClick() {
     }
 }
 
+// end navigation bar functionality
+
+// show current year at copyright
+let curr_yr = document.querySelector('span.current-yr');
+curr_yr.textContent = new Date().getFullYear();
+
+//end setting current year
+
 // slide show functionality
 
 // reference elements
@@ -42,10 +50,6 @@ selectSlide(slideIndex);
 
 prevBtn.addEventListener('click', () => iterateSlideIndex(-1));
 nxtBtn.addEventListener('click', () => iterateSlideIndex(1));
-
-// show current year at copyright
-let curr_yr = document.querySelector('span.current-yr');
-curr_yr.textContent = new Date().getFullYear();
 
 function iterateSlideIndex(n) {
     slideIndex += n;
@@ -69,3 +73,5 @@ function selectSlide(index) {
 
     slides[slideIndex].style.display = "block";
 }
+
+// end slideshow functionality
