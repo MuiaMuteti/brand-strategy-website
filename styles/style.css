@@ -253,11 +253,12 @@ img {
 
 /* services section */
 
-.services-container {
+.services-container,
+.price-plans-container {
     margin-top: 4rem;
     display: grid;
     gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .services h2,
@@ -347,13 +348,6 @@ img {
     margin-bottom: 1rem;
 }
 
-.price-plans-container {
-    margin-top: 4rem;
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-}
-
 .plan-card {
     text-align: center;
 
@@ -385,18 +379,6 @@ img {
 
 .plan-desc {
     margin: 2rem 0 4rem 0;
-}
-
-.plan-card a {
-    display: inline-block;
-
-    padding: 1rem 4rem;
-
-    color: var(--main-text-color);
-    text-decoration: none;
-
-    border: 2px solid var(--secondary-color);
-    border-radius: 1rem;
 }
 
 .plan-card:nth-child(1) {
@@ -655,27 +637,21 @@ img {
 }
 
 @media screen and (max-width: 370px) {
+
+    /* cards take available width */
+    .services-container,
+    .price-plans-container,
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+
     .cta-buttons .secondary {
         margin-top: 2rem;
     }
 
-    .ada {
-        padding: 2rem;
-    }
-}
-
-/* cards take available width */
-@media screen and (max-width: 340px) {
-    .price-plans-container {
-        grid-template-columns: 1fr;
-    }
-
+    .ada,
     .plan-card {
         padding: 2rem;
-    }
-
-    .plan-card a {
-        padding: 0.5rem 1rem;
     }
 }
 
@@ -684,7 +660,7 @@ img {
         display: none;
     }
 
-    .logo img:last-child {
+    .icons .logo img:last-child {
         width: 12rem;
     }
 
